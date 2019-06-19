@@ -27,7 +27,7 @@ public class BookController {
 	@Autowired
 	private BookRepository bookRepository;
 	
-	@GetMapping
+	@GetMapping("/")
 	public Iterable findAll() {
 		return bookRepository.findAll();
 	}
